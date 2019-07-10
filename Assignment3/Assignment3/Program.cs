@@ -40,18 +40,34 @@ namespace Assignment3
             }
         }
     }
-    class PlayingWithStack
+    class PlayingWithStacks
     {
-        public void Run()
+        public static void Run(Queue<string> tangerine)
         {
+            Stack<string> names = new Stack<string>();
+            // how can I access the Queue variables "names" here in this class???
+            // iterate OVER our Queue 
+            // get each element
+            // push it into the Stack
+            foreach (var item in tangerine)
+            {
+                names.Push(tangerine.Dequeue());
+            }
+        }
+    }
 
-            Sta ck numbers = new Stack();
+    class Workbench { }
 
-            //how can i access the queue variables names here in this class??
-            //iterate over the queue
-            //get each element
-            //push it into the stack
+    class Red
+    {
+        public static string FavoriteFood = "Carrots";
+    }
 
+    class Blue
+    {
+        public void SayFavoriteFood(string FavFood)
+        {
+            Console.WriteLine(Red.FavoriteFood);
         }
     }
 }
