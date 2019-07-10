@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace Assignment3
 {
@@ -11,10 +12,10 @@ namespace Assignment3
     {
         static void Main(string[] args)
         {
-          
-                var tp = new TextProcessing();
-                tp.Run();
-            
+
+            var tp = new TextProcessing();
+            tp.Run();
+
         }
     }
     class TextProcessing
@@ -37,6 +38,20 @@ namespace Assignment3
                 file.Close();
                 Console.WriteLine($"File has {counter} lines.");
             }
+        }
+    }
+    class PlayingWithStack
+    {
+        public void Run()
+        {
+
+            Sta ck numbers = new Stack();
+
+            //how can i access the queue variables names here in this class??
+            //iterate over the queue
+            //get each element
+            //push it into the stack
+
         }
     }
 }
